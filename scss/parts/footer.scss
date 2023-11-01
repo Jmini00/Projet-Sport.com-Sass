@@ -1,0 +1,73 @@
+@use '../class' as c;
+@use '../var' as v;
+@use '../maps' as map;
+@use '../mixins' as m;
+
+footer hr {
+    height: 3px;
+    background: map-get(map.$background, hr);
+    border: none;
+    margin: 30px 10px;
+}
+
+footer {
+    background: map-get(map.$background, footer);
+
+    >div>ul {
+        justify-content: space-evenly;
+
+        li {
+            width: 20%;
+            text-align: center;
+        }
+
+    }
+}
+
+#footer-nav {
+    width: 516px;
+    margin: auto;
+    background: #fff;
+    padding: 10px 0;
+    border-radius: 5px;
+    position: relative;
+    top: -18px;
+
+    ul {
+        @extend .align-horiz;
+        justify-content: space-evenly;
+    }
+}
+
+#footer-nav a {
+    color: map-get(map.$fonts, primary-font-color);
+}
+
+footer .social {
+    margin-bottom: 15px;
+    ul {
+        @extend .align-horiz, .align-horiz-center;
+    li {
+        margin-right: 72px;
+    }
+}
+}
+
+footer p {
+    color: map-get(map.$fonts, secondary-font-color);
+}
+
+
+@include m.icon-fontawesome("enveloppe", "\f0e0", "--fa-font-solid");
+@include m.icon-fontawesome("apple", "\f5d1", "--fa-font-solid");
+@include m.icon-fontawesome("music", "\f001", "--fa-font-solid");
+
+@include m.pastille-footer-nav("pastille", "\f111", "--fa-font-solid");
+
+
+#copyright {
+    color: #fff;
+    font-size: .8rem;
+    text-align: center;
+    padding: 20px 0;
+}

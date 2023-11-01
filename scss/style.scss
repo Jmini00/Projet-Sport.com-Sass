@@ -1,0 +1,50 @@
+
+@use '_var' as v;
+@use '_maps' as map;
+@use '_class' as c;
+@use '_mixins' as m;
+@use 'parts/header';
+@use 'parts/main';
+@use 'parts/footer';
+
+
+
+
+@font-face {
+    font-family: primary-font;
+    src: url(../fonts/LiberationSans-Regular-webfont.ttf);
+}
+@font-face {
+    font-family: primary-font-bold;
+    src: url(../fonts/LiberationSans-Bold-webfont.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 14px; /* definit 1 rem */
+}
+
+body {
+    background: map-get(map.$background, site);
+    font-family: v.$primary-font, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-fix {
+    max-width: v.$width-container;
+    margin: auto;
+}
+
+
+

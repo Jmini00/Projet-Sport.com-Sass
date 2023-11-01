@@ -1,0 +1,54 @@
+
+@use '../class' as c;
+@use '../var' as v;
+@use '../maps' as map;
+@use '../mixins' as m;
+
+main {
+    background: map-get(map.$background,main);
+    padding: 45px 108px;
+}
+
+.products .align-horiz {
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+ .products h2 {
+    text-align: center;
+    text-transform: uppercase;
+    width: 366px;
+    position: absolute;
+    bottom: 58px;
+    color: map-get(map.$fonts, primary-font-color);
+}
+
+.products li {
+    position: relative;
+    margin-bottom: 70px;
+    width: 366px;
+ }
+
+.button-reduction {
+    @include m.button;
+    color: map-get(map.$fonts, span-color);
+}
+
+.price  {
+    margin-top: 19px;
+    display: flex;
+    justify-content: center;
+ }
+
+ .prix-barre {
+    @include m.prix-barre;
+ }
+
+ .prix-promo {
+    @include m.prix-promo;
+    color: map-get(map.$fonts, span-color);
+ }
+
+ .vente {
+    @include m.vente;
+ }

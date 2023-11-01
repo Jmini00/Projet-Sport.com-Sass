@@ -1,0 +1,97 @@
+.align-horiz {
+  display: flex;
+}
+
+.align-horiz-space-between {
+  justify-content: space-between;
+}
+
+.align-horiz-space-around {
+  justify-content: space-around;
+}
+
+.align-horiz-center {
+  justify-content: center;
+}
+
+.align-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  background: #f3f3f3;
+  padding: 45px 108px;
+}
+
+.products .align-horiz {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products h2 {
+  text-align: center;
+  text-transform: uppercase;
+  width: 366px;
+  position: absolute;
+  bottom: 58px;
+  color: black;
+}
+
+.products li {
+  position: relative;
+  margin-bottom: 70px;
+  width: 366px;
+}
+
+.button-reduction {
+  font-family: "primary-font-bold", sans-serif;
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-align: center;
+  color: orange;
+  position: absolute;
+  right: -18px;
+  top: 8px;
+  padding: 15px;
+  background: #292929;
+  border-radius: 15px;
+  z-index: 2;
+  color: orange;
+}
+
+.price {
+  margin-top: 19px;
+  display: flex;
+  justify-content: center;
+}
+
+.prix-barre {
+  font-family: "primary-font", sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: line-through;
+  margin-right: 15px;
+}
+
+.prix-promo {
+  font-family: "primary-font-bold", sans-serif;
+  font-size: 1.5rem;
+  color: orange;
+  color: orange;
+}
+
+.vente {
+  margin-right: 15px;
+  border: none;
+  background: #292929;
+  color: white;
+  padding: 5px 25px;
+  cursor: pointer;
+}

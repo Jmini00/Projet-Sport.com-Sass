@@ -1,0 +1,108 @@
+.align-horiz, #footer-nav ul, footer .social ul {
+  display: flex;
+}
+
+.align-horiz-space-between {
+  justify-content: space-between;
+}
+
+.align-horiz-space-around {
+  justify-content: space-around;
+}
+
+.align-horiz-center, footer .social ul {
+  justify-content: center;
+}
+
+.align-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+footer hr {
+  height: 3px;
+  background: #818181;
+  border: none;
+  margin: 30px 10px;
+}
+
+footer {
+  background: #373737;
+}
+footer > div > ul {
+  justify-content: space-evenly;
+}
+footer > div > ul li {
+  width: 20%;
+  text-align: center;
+}
+
+#footer-nav {
+  width: 516px;
+  margin: auto;
+  background: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+  position: relative;
+  top: -18px;
+}
+#footer-nav ul {
+  justify-content: space-evenly;
+}
+
+#footer-nav a {
+  color: black;
+}
+
+footer .social {
+  margin-bottom: 15px;
+}
+footer .social ul li {
+  margin-right: 72px;
+}
+
+footer p {
+  color: white;
+}
+
+.icon-enveloppe::before {
+  content: "\f0e0";
+  font: var(--fa-font-solid);
+  color: #818181;
+  font-size: 4rem;
+}
+
+.icon-apple::before {
+  content: "\f5d1";
+  font: var(--fa-font-solid);
+  color: #818181;
+  font-size: 4rem;
+}
+
+.icon-music::before {
+  content: "\f001";
+  font: var(--fa-font-solid);
+  color: #818181;
+  font-size: 4rem;
+}
+
+.icon-pastille::after {
+  content: "\f111";
+  font: var(--fa-font-solid);
+  color: #818181;
+  font-size: 1rem;
+  margin-left: 28px;
+}
+
+#copyright {
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 20px 0;
+}

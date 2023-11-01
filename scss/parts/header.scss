@@ -1,0 +1,46 @@
+
+@use '../class' as c;
+@use '../var' as v;
+@use '../maps' as map;
+
+h1 {
+    font-size: map-get(map.$fonts-size, h1) 
+}
+
+h2 {
+    font-size:  map-get(map.$fonts-size, h2)
+}
+
+.primary-color {
+    color: map-get(map.$fonts, span-color);
+}
+
+header .container-fix{
+    @extend .align-horiz, .align-horiz-space-between;
+}
+
+#header-logo > div:first-of-type {
+    align-items: center;
+}
+
+header > img {
+    display: block;
+}
+
+header > div:first-of-type {
+    background: map-get(map.$background, header);
+    align-items: center;
+    padding:34px 0 12px 0;
+    margin-bottom: 21px;
+}
+
+#primary-nav {
+    ul {
+    @extend .align-horiz;
+    a {
+    display: block;
+    padding: 5px 45px 5px 0;
+    color: map-get(map.$fonts, primary-font-color);
+    }
+}
+}

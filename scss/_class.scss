@@ -1,0 +1,27 @@
+
+.align-horiz {
+    display: flex;
+}
+
+.align-horiz-space-between {
+    justify-content: space-between;
+}
+
+.align-horiz-space-around {
+    justify-content: space-around;
+}
+
+.align-horiz-center {
+    justify-content: center;
+}
+
+.align-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,59 @@
+.align-horiz, header .container-fix, #primary-nav ul {
+  display: flex;
+}
+
+.align-horiz-space-between, header .container-fix {
+  justify-content: space-between;
+}
+
+.align-horiz-space-around {
+  justify-content: space-around;
+}
+
+.align-horiz-center {
+  justify-content: center;
+}
+
+.align-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.primary-color {
+  color: orange;
+}
+
+#header-logo > div:first-of-type {
+  align-items: center;
+}
+
+header > img {
+  display: block;
+}
+
+header > div:first-of-type {
+  background: #efefef;
+  align-items: center;
+  padding: 34px 0 12px 0;
+  margin-bottom: 21px;
+}
+
+#primary-nav ul a {
+  display: block;
+  padding: 5px 45px 5px 0;
+  color: black;
+}
